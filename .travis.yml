@@ -1,0 +1,11 @@
+language: php
+
+php:
+  - 5.3  
+
+script:
+  - phpunit --bootstrap tests/autoload.php tests/ 
+  - pyrus install pear/PHP_CodeSniffer
+  - phpenv rehash
+  - phpcs --standard=Zend ./
+ 
