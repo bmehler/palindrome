@@ -15,7 +15,8 @@ class PalindromTest extends PHPUnit_Framework_TestCase
    /**
     * @return array
     */
-    public function isValidPalindrom () {
+    public function isValidPalindrom ()
+    {
         return array(           
             array('Otto'),
             array('Lagerregal'),
@@ -23,4 +24,3 @@ class PalindromTest extends PHPUnit_Framework_TestCase
         );
     }
 }
-?>
