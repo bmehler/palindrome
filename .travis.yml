@@ -4,7 +4,7 @@ php:
   - 5.3  
 
 before_install:
-  - php /home/travis/.phpenv/versions/5.3/bin/composer.phar self-update
+  - php /home/travis/.phpenv/versions/5.3/bin/composer self-update
   
 script:
   - phpunit --bootstrap tests/autoload.php tests/ 
