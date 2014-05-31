@@ -10,8 +10,7 @@ class Palindrom
     
     public function isPalindrom ($wort)
     {             
-        if (!is_string($wort))
-        {
+        if (!is_string($wort)) {
             throw new \InvalidArgumentException('Invalid argument');            
         } else {        
             $originalString = strtolower($wort);       
