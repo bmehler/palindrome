@@ -4,9 +4,10 @@ php:
   - 5.3
 
 before_install:
-  - php /home/travis/.phpenv/versions/5.3.27/bin/composer install   
+  - php /home/travis/.phpenv/versions/5.3.27/bin/composer self-update  
 
 script:
+  - composer --version
   - phpunit --bootstrap tests/autoload.php tests/ 
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
