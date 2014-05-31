@@ -11,8 +11,7 @@ class autoloader
     {
         $file = $class . '.php';
         
-        if (file_exists($file))
-        {
+        if (file_exists($file)) {
             require $file;
         }
     }
