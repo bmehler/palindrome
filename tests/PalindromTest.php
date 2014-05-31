@@ -1,6 +1,5 @@
 ﻿<?php
-class PalindromTest extends PHPUnit_Framework_TestCase
-{  
+class PalindromTest extends PHPUnit_Framework_TestCase {  
     /** 
      * @dataProvider isValidPalindrom
      * @test
