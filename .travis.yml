@@ -8,7 +8,7 @@ before_install:
 
 script:
   - composer --version
-  - phpunit --bootstrap tests/autoload.php tests/ 
+  - phpunit --bootstrap tests/autoloader.php tests/ 
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
   - phpcs --standard=Zend ./
