@@ -12,7 +12,7 @@
  * @link      git://github.com/bmehler/palindrome.git bmehler/palindrome
  */
 class Palindrom
-{  
+{
     /**
      * The constructer of the class Palindrom.    
      */
