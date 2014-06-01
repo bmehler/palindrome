@@ -12,4 +12,4 @@ script:
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
   - phpcs --standard=Zend ./
- 
+  - phpcs --standard=PEAR ./ 
