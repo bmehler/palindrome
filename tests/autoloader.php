@@ -24,31 +24,31 @@
  * @license   git://github.com/bmehler/palindrome.git bmehler/palindrome GPL
  * @link      git://github.com/bmehler/palindrome.git bmehler/palindrome
  */
-class Autoloader
-{
-    /**
-     * Calls the static function load with the current class for autoloading.
-     *
-     * @return void
-     */
-    public static function loader()
-    {
-        spl_autoload_register('self::load');
-    }
-    
-    /**
-     * Includes the current class and do a require.
-     *
-     * @return void
-     */
-    public static function load($class)
-    {
-        $file = $class . '.php';
-        
-        if (file_exists($file)) {
-            require $file;
+   class Autoloader
+   {
+       /**
+        * Calls the static function load with the current class for autoloading.
+        *
+        * @return void
+        */
+        public static function loader()
+        {
+            spl_autoload_register('self::load');
         }
-    }
+    
+        /**
+         * Includes the current class and do a require.
+         *
+         * @return void
+         */
+        public static function load($class)
+        {
+            $file = $class . '.php';
+            
+            if (file_exists($file)) {
+                require $file;
+            }
+        }
 }
 
 Autoloader::loader();    
