@@ -11,5 +11,4 @@ script:
   - phpunit --bootstrap tests/autoloader.php tests/ 
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
-  - phpcs --standard=Zend ./
-  - phpcs ./ 
+  - phpcs --standard=Zend ./  
