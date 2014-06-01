@@ -12,18 +12,6 @@
  * @link      git://github.com/bmehler/palindrome.git bmehler/palindrome
  */
  
- /**
- * Represents a Autoloader Class for including classes.
- *
- * PHP version 5
- *
- * @category  PHP
- * @package   Palindrome
- * @author    Bernhard Mehler <bernhard.mehler@gmail.com>
- * @copyright 2014 Bernhard Mehler
- * @license   git://github.com/bmehler/palindrome.git bmehler/palindrome GPL
- * @link      git://github.com/bmehler/palindrome.git bmehler/palindrome
- */
 class Autoloader
 {
    /**
