@@ -1,9 +1,7 @@
 language: php
 
-before_script:
-  - curl http://getcomposer.org/installer | php
-  - php /home/travis/build/bmehler/palindrome/composer.phar install --dev
-  - composer install --dev
+before_install:
+  - php /home/travis/.phpenv/versions/5.3.27/bin/composer self-update  
 
 php:
   - 5.3
