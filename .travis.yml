@@ -8,7 +8,7 @@ php:
 
 script:
   - composer --version
-  - phpunit --bootstrap tests/autoloader.php tests/ 
+  - phpunit --colors --bootstrap tests/autoloader.php tests/ 
   - pyrus install pear/PHP_CodeSniffer
   - phpenv rehash
   - phpcs --standard=Zend ./  
