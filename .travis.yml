@@ -1,7 +1,9 @@
 language: php
 
-before_install:
-  - php /home/travis/.phpenv/versions/5.3.27/bin/composer self-update  
+before_script:
+  - curl http://getcomposer.org/installer | php
+  - php composer.phar install --dev
+  - composer install --dev
 
 php:
   - 5.3
